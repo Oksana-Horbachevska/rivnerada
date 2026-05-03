@@ -16,6 +16,11 @@
   padding: 0px;
 }
 
+.logoImage {
+  filter: brightness(2) invert(1);
+  display: block;
+}
+
 .navList {
   display: flex;
   flex-direction: row;

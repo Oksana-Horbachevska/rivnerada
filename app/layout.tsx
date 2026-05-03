@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${inter.variable} antialiased`}>
         <TanStackProvider>
           <Header />
-          <main className="container"> {children}</main>
+          <main> {children}</main>
           <Footer />
           <Toaster position="top-right" reverseOrder={false} />
         </TanStackProvider>
