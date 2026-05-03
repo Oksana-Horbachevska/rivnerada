@@ -73,7 +73,28 @@ export default function Header() {
           </ul>
         </nav>
         <div className={css.socialBar}>
-          <div className={css.socialWrapper}></div>
+          <div className={css.socialWrapper}>
+            <a
+              href="mailto: der@rivnerada.gov.ua"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={css.socialLink}
+              aria-label="Ми у Facebook"
+            >
+              <svg width="28" height="28" className={css.socialIcon}>
+                <use href="/sprite.svg#icon-envelop" />
+              </svg>
+            </a>
+            <a
+              href="https://www.facebook.com/economy.rv.ua/"
+              className={css.socialLink}
+              aria-label="Написати нам листа"
+            >
+              <svg width="28" height="28" className={css.socialIcon}>
+                <use href="/sprite.svg#icon-facebook" />
+              </svg>
+            </a>
+          </div>
 
           <button className={css.burgerBtn} onClick={() => setIsMenuOpen(true)}>
             <svg width="28" height="28" className={css.burgerIcon}>
