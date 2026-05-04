@@ -1,7 +1,7 @@
 import Image from "next/image";
 import css from "./page.module.css";
-import UsfulLinks from "@/components/UsfulLinks/UsfulLinks";
 import Events from "@/components/Events/Events";
+import UsefulLinks from "@/components/UsefulLinks/UsefulLinks";
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
       </section>
 
       <Events />
-      <UsfulLinks />
+      <UsefulLinks />
     </>
   );
 }

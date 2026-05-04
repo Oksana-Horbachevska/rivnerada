@@ -1,3 +1,9 @@
+import UsefulLinks from "@/components/UsefulLinks/UsefulLinks";
+
 export default function ProgramPassports() {
-  return <div>Program Passports</div>;
+  return (
+    <div>
+      <UsefulLinks />
+    </div>
+  );
 }

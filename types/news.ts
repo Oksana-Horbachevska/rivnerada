@@ -4,3 +4,10 @@ export type NewsItem = {
   content: string;
   imageUrl: string;
 };
+
+export type UsefulItem = {
+  id: string;
+  title: string;
+  imageUrl: string;
+  link: string;
+};

@@ -1,3 +1,9 @@
+import UsefulLinks from "@/components/UsefulLinks/UsefulLinks";
+
 export default function Programs() {
-  return <div>PROGRAMS</div>;
+  return (
+    <div>
+      <UsefulLinks />
+    </div>
+  );
 }

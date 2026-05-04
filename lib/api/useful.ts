@@ -1,9 +1,9 @@
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/lib/firebase";
-import type { NewsItem } from "@/types/news";
+import type { UsefulItem } from "@/types/news";
 
-export const getNews = async (): Promise<NewsItem[]> => {
-  const snapshot = await getDocs(collection(db, "news"));
+export const getUseful = async (): Promise<UsefulItem[]> => {
+  const snapshot = await getDocs(collection(db, "useful"));
 
   return snapshot.docs.map((doc) => {
     const data = doc.data();
@@ -11,8 +11,8 @@ export const getNews = async (): Promise<NewsItem[]> => {
     return {
       id: doc.id,
       title: data.title || "",
-      content: data.content || "",
       imageUrl: data.imageUrl || "",
+      link: data.link || "",
     };
   });
 };

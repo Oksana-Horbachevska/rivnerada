@@ -1,3 +1,9 @@
+import UsefulLinks from "@/components/UsefulLinks/UsefulLinks";
+
 export default function Structure() {
-  return <div>STRUCTURE</div>;
+  return (
+    <div>
+      <UsefulLinks />
+    </div>
+  );
 }
